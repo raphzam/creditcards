@@ -1,3 +1,9 @@
+/**
+ * A simple model for a consumer credit card.
+ *
+ * @author Raphael Zamora
+ */
+
 public class CreditCard {
 
 //    Instance variables
@@ -17,6 +23,16 @@ public class CreditCard {
         this.limit = limit;
         this.balance = initialBal;
     }
+
+    /**
+     * Constructs a new credit card instance.
+     * @param customer      the name of the customer (e.g., "John Doe")
+     * @param bank          the name of the bank (e.g., "Bank of America")
+     * @param account       the account number (e.g., "8573920")
+     * @param limit         the credit limit (measured in dollars)
+     *
+     */
+
 
     public CreditCard(String customer, String bank, String account, int limit) {
         this(customer, bank, account, limit, 0.0); // calling other constructor
